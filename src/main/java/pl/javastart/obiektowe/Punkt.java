@@ -1,15 +1,15 @@
 package pl.javastart.obiektowe;
 
 public class Punkt {
-    int wspX;
-    int wspy;
+    private int wspX;
+    private int wspY;
 
-    public void ustawX(int x){
+    void ustawX(int x){
         wspX = x;
     }
 
-    public void ustawY(int y){
-        wspy = y;
+    void ustawY(int y){
+        wspY = y;
     }
 
     public int dajX(){
@@ -17,6 +17,13 @@ public class Punkt {
     }
 
     public int dajY(){
-        return wspy;
+        return wspY;
+    }
+
+    @Override
+    public String toString() {
+        return "to jest punkt o wspolrzednych 'x','y' gdzie: \n" +
+                "x = " + wspX + "\n" +
+                "y = " + wspY;
     }
 }
