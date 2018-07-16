@@ -5,10 +5,10 @@ public class UstawPunkt {
 
 
         Punkt punkt = new Punkt();
-        punkt.wspX = 10;
-        punkt.wspy = 20;
+        punkt.ustawX(10);
+        punkt.ustawY(20);
         System.out.println("to jest punkt o wspolrzednych 'x','y' gdzie: \n" +
-                "x = " + punkt.wspX + "\n" +
-                "y = " + punkt.wspy);
+                "x = " + punkt.dajX() + "\n" +
+                "y = " + punkt.dajY());
     }
 }
