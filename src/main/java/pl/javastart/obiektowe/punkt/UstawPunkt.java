@@ -1,4 +1,4 @@
-package pl.javastart.obiektowe;
+package pl.javastart.obiektowe.punkt;
 
 public class UstawPunkt {
     public static void main(String[] args) {
