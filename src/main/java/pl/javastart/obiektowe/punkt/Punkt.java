@@ -4,13 +4,15 @@ public class Punkt {
     private int wspX;
     private int wspY;
 
+    Punkt(int x, int y){wspX = x; wspY = y; }
+
+    Punkt(Punkt pkt){wspX = pkt.wspX; wspY = pkt.wspY; }
+
     void ustawX(int x){
         wspX = x;
     }
 
-    void ustawY(int y){
-        wspY = y;
-    }
+    void ustawY(int y){ wspY = y; }
 
     public int dajX(){
         return wspX;
